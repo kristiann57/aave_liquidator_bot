@@ -1,0 +1,3392 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract IPoolAddressesProvider",
+          "name": "provider",
+          "type": "address"
+        }
+      ],
+      "name": "getReservesData",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "underlyingAsset",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "symbol",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "decimals",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "baseLTVasCollateral",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "reserveLiquidationThreshold",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "reserveLiquidationBonus",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "reserveFactor",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "usageAsCollateralEnabled",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "borrowingEnabled",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "stableBorrowRateEnabled",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "isActive",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "isFrozen",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint128",
+              "name": "liquidityIndex",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "variableBorrowIndex",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "liquidityRate",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "variableBorrowRate",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "stableBorrowRate",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint40",
+              "name": "lastUpdateTimestamp",
+              "type": "uint40"
+            },
+            {
+              "internalType": "address",
+              "name": "aTokenAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "stableDebtTokenAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "variableDebtTokenAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "interestRateStrategyAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "availableLiquidity",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalPrincipalStableDebt",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "averageStableRate",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "stableDebtLastUpdateTimestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalScaledVariableDebt",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "priceInMarketReferenceCurrency",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "priceOracle",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "variableRateSlope1",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "variableRateSlope2",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "stableRateSlope1",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "stableRateSlope2",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "baseStableBorrowRate",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "baseVariableBorrowRate",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "optimalUsageRatio",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "isPaused",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "isSiloedBorrowing",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint128",
+              "name": "accruedToTreasury",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "unbacked",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "isolationModeTotalDebt",
+              "type": "uint128"
+            },
+            {
+              "internalType": "bool",
+              "name": "flashLoanEnabled",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "debtCeiling",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "debtCeilingDecimals",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint8",
+              "name": "eModeCategoryId",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "borrowCap",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "supplyCap",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint16",
+              "name": "eModeLtv",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint16",
+              "name": "eModeLiquidationThreshold",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint16",
+              "name": "eModeLiquidationBonus",
+              "type": "uint16"
+            },
+            {
+              "internalType": "address",
+              "name": "eModePriceSource",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "eModeLabel",
+              "type": "string"
+            },
+            {
+              "internalType": "bool",
+              "name": "borrowableInIsolation",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct IUiPoolDataProviderV3.AggregatedReserveData[]",
+          "name": "",
+          "type": "tuple[]"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "marketReferenceCurrencyUnit",
+              "type": "uint256"
+            },
+            {
+              "internalType": "int256",
+              "name": "marketReferenceCurrencyPriceInUsd",
+              "type": "int256"
+            },
+            {
+              "internalType": "int256",
+              "name": "networkBaseTokenPriceInUsd",
+              "type": "int256"
+            },
+            {
+              "internalType": "uint8",
+              "name": "networkBaseTokenPriceDecimals",
+              "type": "uint8"
+            }
+          ],
+          "internalType": "struct IUiPoolDataProviderV3.BaseCurrencyInfo",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IPoolAddressesProvider",
+          "name": "provider",
+          "type": "address"
+        }
+      ],
+      "name": "getReservesList",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IPoolAddressesProvider",
+          "name": "provider",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "getUserReservesData",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "underlyingAsset",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "scaledATokenBalance",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "usageAsCollateralEnabledOnUser",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "stableBorrowRate",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "scaledVariableDebt",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "principalStableDebt",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "stableBorrowLastUpdateTimestamp",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct IUiPoolDataProviderV3.UserReserveData[]",
+          "name": "",
+          "type": "tuple[]"
+        },
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getReservesData(address)": "ec489c21",
+    "getReservesList(address)": "586c1442",
+    "getUserReservesData(address,address)": "51974cc0"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract IPoolAddressesProvider\",\"name\":\"provider\",\"type\":\"address\"}],\"name\":\"getReservesData\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"underlyingAsset\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"symbol\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"decimals\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"baseLTVasCollateral\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"reserveLiquidationThreshold\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"reserveLiquidationBonus\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"reserveFactor\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"usageAsCollateralEnabled\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"borrowingEnabled\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"stableBorrowRateEnabled\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"isActive\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"isFrozen\",\"type\":\"bool\"},{\"internalType\":\"uint128\",\"name\":\"liquidityIndex\",\"type\":\"uint128\"},{\"internalType\":\"uint128\",\"name\":\"variableBorrowIndex\",\"type\":\"uint128\"},{\"internalType\":\"uint128\",\"name\":\"liquidityRate\",\"type\":\"uint128\"},{\"internalType\":\"uint128\",\"name\":\"variableBorrowRate\",\"type\":\"uint128\"},{\"internalType\":\"uint128\",\"name\":\"stableBorrowRate\",\"type\":\"uint128\"},{\"internalType\":\"uint40\",\"name\":\"lastUpdateTimestamp\",\"type\":\"uint40\"},{\"internalType\":\"address\",\"name\":\"aTokenAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"stableDebtTokenAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"variableDebtTokenAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"interestRateStrategyAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"availableLiquidity\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"totalPrincipalStableDebt\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"averageStableRate\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"stableDebtLastUpdateTimestamp\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"totalScaledVariableDebt\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"priceInMarketReferenceCurrency\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"priceOracle\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"variableRateSlope1\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"variableRateSlope2\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"stableRateSlope1\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"stableRateSlope2\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"baseStableBorrowRate\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"baseVariableBorrowRate\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"optimalUsageRatio\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"isPaused\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"isSiloedBorrowing\",\"type\":\"bool\"},{\"internalType\":\"uint128\",\"name\":\"accruedToTreasury\",\"type\":\"uint128\"},{\"internalType\":\"uint128\",\"name\":\"unbacked\",\"type\":\"uint128\"},{\"internalType\":\"uint128\",\"name\":\"isolationModeTotalDebt\",\"type\":\"uint128\"},{\"internalType\":\"bool\",\"name\":\"flashLoanEnabled\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"debtCeiling\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"debtCeilingDecimals\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"eModeCategoryId\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"borrowCap\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"supplyCap\",\"type\":\"uint256\"},{\"internalType\":\"uint16\",\"name\":\"eModeLtv\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"eModeLiquidationThreshold\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"eModeLiquidationBonus\",\"type\":\"uint16\"},{\"internalType\":\"address\",\"name\":\"eModePriceSource\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"eModeLabel\",\"type\":\"string\"},{\"internalType\":\"bool\",\"name\":\"borrowableInIsolation\",\"type\":\"bool\"}],\"internalType\":\"struct IUiPoolDataProviderV3.AggregatedReserveData[]\",\"name\":\"\",\"type\":\"tuple[]\"},{\"components\":[{\"internalType\":\"uint256\",\"name\":\"marketReferenceCurrencyUnit\",\"type\":\"uint256\"},{\"internalType\":\"int256\",\"name\":\"marketReferenceCurrencyPriceInUsd\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"networkBaseTokenPriceInUsd\",\"type\":\"int256\"},{\"internalType\":\"uint8\",\"name\":\"networkBaseTokenPriceDecimals\",\"type\":\"uint8\"}],\"internalType\":\"struct IUiPoolDataProviderV3.BaseCurrencyInfo\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract IPoolAddressesProvider\",\"name\":\"provider\",\"type\":\"address\"}],\"name\":\"getReservesList\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract IPoolAddressesProvider\",\"name\":\"provider\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"name\":\"getUserReservesData\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"underlyingAsset\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"scaledATokenBalance\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"usageAsCollateralEnabledOnUser\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"stableBorrowRate\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"scaledVariableDebt\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"principalStableDebt\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"stableBorrowLastUpdateTimestamp\",\"type\":\"uint256\"}],\"internalType\":\"struct IUiPoolDataProviderV3.UserReserveData[]\",\"name\":\"\",\"type\":\"tuple[]\"},{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"node_modules/@aave/periphery-v3/contracts/misc/interfaces/IUiPoolDataProviderV3.sol\":\"IUiPoolDataProviderV3\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":100},\"remappings\":[\":@aave/=node_modules/@aave/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@uniswap/=node_modules/@uniswap/\",\":base64-sol/=node_modules/base64-sol/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":eth-gas-reporter/=node_modules/eth-gas-reporter/\",\":forge-std/=lib/forge-std/src/\",\":hardhat/=node_modules/hardhat/\"],\"viaIR\":true},\"sources\":{\"node_modules/@aave/core-v3/contracts/interfaces/IPoolAddressesProvider.sol\":{\"keccak256\":\"0x33d4308d9407b4ee2297fc4ba5acce1a96a6c658189e2778a4f6b90e032fb3b5\",\"license\":\"AGPL-3.0\",\"urls\":[\"bzz-raw://978336a2a40229ccc7749344be890862ea12e17e9fffe5bb977ba3841de07b5a\",\"dweb:/ipfs/QmScNrQfDSPg1afJmkCty6fZkETUrWTmEXWeTmHoe7mSqa\"]},\"node_modules/@aave/periphery-v3/contracts/misc/interfaces/IUiPoolDataProviderV3.sol\":{\"keccak256\":\"0xd032122c140eb82712209b3bbe61caaf1732984d5e43e4febdd60fdde33091b9\",\"license\":\"AGPL-3.0\",\"urls\":[\"bzz-raw://174a4cbb0c15a19697224b898f4536c9be250b475160205b71ab0445609e882a\",\"dweb:/ipfs/QmcmBKiHKgLQUidbqk74RW3bUT341mDQ4764eDHHYD8aK9\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.20+commit.a1b79de6"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "contract IPoolAddressesProvider",
+              "name": "provider",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getReservesData",
+          "outputs": [
+            {
+              "internalType": "struct IUiPoolDataProviderV3.AggregatedReserveData[]",
+              "name": "",
+              "type": "tuple[]",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "underlyingAsset",
+                  "type": "address"
+                },
+                {
+                  "internalType": "string",
+                  "name": "name",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "symbol",
+                  "type": "string"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "decimals",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "baseLTVasCollateral",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "reserveLiquidationThreshold",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "reserveLiquidationBonus",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "reserveFactor",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "usageAsCollateralEnabled",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "borrowingEnabled",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "stableBorrowRateEnabled",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "isActive",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "isFrozen",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "uint128",
+                  "name": "liquidityIndex",
+                  "type": "uint128"
+                },
+                {
+                  "internalType": "uint128",
+                  "name": "variableBorrowIndex",
+                  "type": "uint128"
+                },
+                {
+                  "internalType": "uint128",
+                  "name": "liquidityRate",
+                  "type": "uint128"
+                },
+                {
+                  "internalType": "uint128",
+                  "name": "variableBorrowRate",
+                  "type": "uint128"
+                },
+                {
+                  "internalType": "uint128",
+                  "name": "stableBorrowRate",
+                  "type": "uint128"
+                },
+                {
+                  "internalType": "uint40",
+                  "name": "lastUpdateTimestamp",
+                  "type": "uint40"
+                },
+                {
+                  "internalType": "address",
+                  "name": "aTokenAddress",
+                  "type": "address"
+                },
+                {
+                  "internalType": "address",
+                  "name": "stableDebtTokenAddress",
+                  "type": "address"
+                },
+                {
+                  "internalType": "address",
+                  "name": "variableDebtTokenAddress",
+                  "type": "address"
+                },
+                {
+                  "internalType": "address",
+                  "name": "interestRateStrategyAddress",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "availableLiquidity",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "totalPrincipalStableDebt",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "averageStableRate",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "stableDebtLastUpdateTimestamp",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "totalScaledVariableDebt",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "priceInMarketReferenceCurrency",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "address",
+                  "name": "priceOracle",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "variableRateSlope1",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "variableRateSlope2",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "stableRateSlope1",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "stableRateSlope2",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "baseStableBorrowRate",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "baseVariableBorrowRate",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "optimalUsageRatio",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "isPaused",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "isSiloedBorrowing",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "uint128",
+                  "name": "accruedToTreasury",
+                  "type": "uint128"
+                },
+                {
+                  "internalType": "uint128",
+                  "name": "unbacked",
+                  "type": "uint128"
+                },
+                {
+                  "internalType": "uint128",
+                  "name": "isolationModeTotalDebt",
+                  "type": "uint128"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "flashLoanEnabled",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "debtCeiling",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "debtCeilingDecimals",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "eModeCategoryId",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "borrowCap",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "supplyCap",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "eModeLtv",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "eModeLiquidationThreshold",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "eModeLiquidationBonus",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "address",
+                  "name": "eModePriceSource",
+                  "type": "address"
+                },
+                {
+                  "internalType": "string",
+                  "name": "eModeLabel",
+                  "type": "string"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "borrowableInIsolation",
+                  "type": "bool"
+                }
+              ]
+            },
+            {
+              "internalType": "struct IUiPoolDataProviderV3.BaseCurrencyInfo",
+              "name": "",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "marketReferenceCurrencyUnit",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "int256",
+                  "name": "marketReferenceCurrencyPriceInUsd",
+                  "type": "int256"
+                },
+                {
+                  "internalType": "int256",
+                  "name": "networkBaseTokenPriceInUsd",
+                  "type": "int256"
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "networkBaseTokenPriceDecimals",
+                  "type": "uint8"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "contract IPoolAddressesProvider",
+              "name": "provider",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getReservesList",
+          "outputs": [
+            {
+              "internalType": "address[]",
+              "name": "",
+              "type": "address[]"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "contract IPoolAddressesProvider",
+              "name": "provider",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "user",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getUserReservesData",
+          "outputs": [
+            {
+              "internalType": "struct IUiPoolDataProviderV3.UserReserveData[]",
+              "name": "",
+              "type": "tuple[]",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "underlyingAsset",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "scaledATokenBalance",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "usageAsCollateralEnabledOnUser",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "stableBorrowRate",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "scaledVariableDebt",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "principalStableDebt",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "stableBorrowLastUpdateTimestamp",
+                  "type": "uint256"
+                }
+              ]
+            },
+            {
+              "internalType": "uint8",
+              "name": "",
+              "type": "uint8"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@aave/=node_modules/@aave/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":@uniswap/=node_modules/@uniswap/",
+        ":base64-sol/=node_modules/base64-sol/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":eth-gas-reporter/=node_modules/eth-gas-reporter/",
+        ":forge-std/=lib/forge-std/src/",
+        ":hardhat/=node_modules/hardhat/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 100
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "node_modules/@aave/periphery-v3/contracts/misc/interfaces/IUiPoolDataProviderV3.sol": "IUiPoolDataProviderV3"
+      },
+      "libraries": {},
+      "viaIR": true
+    },
+    "sources": {
+      "node_modules/@aave/core-v3/contracts/interfaces/IPoolAddressesProvider.sol": {
+        "keccak256": "0x33d4308d9407b4ee2297fc4ba5acce1a96a6c658189e2778a4f6b90e032fb3b5",
+        "urls": [
+          "bzz-raw://978336a2a40229ccc7749344be890862ea12e17e9fffe5bb977ba3841de07b5a",
+          "dweb:/ipfs/QmScNrQfDSPg1afJmkCty6fZkETUrWTmEXWeTmHoe7mSqa"
+        ],
+        "license": "AGPL-3.0"
+      },
+      "node_modules/@aave/periphery-v3/contracts/misc/interfaces/IUiPoolDataProviderV3.sol": {
+        "keccak256": "0xd032122c140eb82712209b3bbe61caaf1732984d5e43e4febdd60fdde33091b9",
+        "urls": [
+          "bzz-raw://174a4cbb0c15a19697224b898f4536c9be250b475160205b71ab0445609e882a",
+          "dweb:/ipfs/QmcmBKiHKgLQUidbqk74RW3bUT341mDQ4764eDHHYD8aK9"
+        ],
+        "license": "AGPL-3.0"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "node_modules/@aave/periphery-v3/contracts/misc/interfaces/IUiPoolDataProviderV3.sol",
+    "id": 46945,
+    "exportedSymbols": {
+      "IPoolAddressesProvider": [
+        46403
+      ],
+      "IUiPoolDataProviderV3": [
+        46944
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "37:3030:25",
+    "nodes": [
+      {
+        "id": 46757,
+        "nodeType": "PragmaDirective",
+        "src": "37:24:25",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".10"
+        ]
+      },
+      {
+        "id": 46759,
+        "nodeType": "ImportDirective",
+        "src": "63:101:25",
+        "nodes": [],
+        "absolutePath": "node_modules/@aave/core-v3/contracts/interfaces/IPoolAddressesProvider.sol",
+        "file": "@aave/core-v3/contracts/interfaces/IPoolAddressesProvider.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 46945,
+        "sourceUnit": 46404,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 46758,
+              "name": "IPoolAddressesProvider",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 46403,
+              "src": "71:22:25",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 46944,
+        "nodeType": "ContractDefinition",
+        "src": "166:2900:25",
+        "nodes": [
+          {
+            "id": 46774,
+            "nodeType": "StructDefinition",
+            "src": "202:251:25",
+            "nodes": [],
+            "canonicalName": "IUiPoolDataProviderV3.InterestRates",
+            "members": [
+              {
+                "constant": false,
+                "id": 46761,
+                "mutability": "mutable",
+                "name": "variableRateSlope1",
+                "nameLocation": "237:18:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46774,
+                "src": "229:26:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46760,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "229:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46763,
+                "mutability": "mutable",
+                "name": "variableRateSlope2",
+                "nameLocation": "269:18:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46774,
+                "src": "261:26:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46762,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "261:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46765,
+                "mutability": "mutable",
+                "name": "stableRateSlope1",
+                "nameLocation": "301:16:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46774,
+                "src": "293:24:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46764,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "293:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46767,
+                "mutability": "mutable",
+                "name": "stableRateSlope2",
+                "nameLocation": "331:16:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46774,
+                "src": "323:24:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46766,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "323:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46769,
+                "mutability": "mutable",
+                "name": "baseStableBorrowRate",
+                "nameLocation": "361:20:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46774,
+                "src": "353:28:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46768,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "353:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46771,
+                "mutability": "mutable",
+                "name": "baseVariableBorrowRate",
+                "nameLocation": "395:22:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46774,
+                "src": "387:30:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46770,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "387:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46773,
+                "mutability": "mutable",
+                "name": "optimalUsageRatio",
+                "nameLocation": "431:17:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46774,
+                "src": "423:25:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46772,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "423:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "InterestRates",
+            "nameLocation": "209:13:25",
+            "scope": 46944,
+            "visibility": "public"
+          },
+          {
+            "id": 46883,
+            "nodeType": "StructDefinition",
+            "src": "457:1723:25",
+            "nodes": [],
+            "canonicalName": "IUiPoolDataProviderV3.AggregatedReserveData",
+            "members": [
+              {
+                "constant": false,
+                "id": 46776,
+                "mutability": "mutable",
+                "name": "underlyingAsset",
+                "nameLocation": "500:15:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "492:23:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 46775,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "492:7:25",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46778,
+                "mutability": "mutable",
+                "name": "name",
+                "nameLocation": "528:4:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "521:11:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 46777,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "521:6:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46780,
+                "mutability": "mutable",
+                "name": "symbol",
+                "nameLocation": "545:6:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "538:13:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 46779,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "538:6:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46782,
+                "mutability": "mutable",
+                "name": "decimals",
+                "nameLocation": "565:8:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "557:16:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46781,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "557:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46784,
+                "mutability": "mutable",
+                "name": "baseLTVasCollateral",
+                "nameLocation": "587:19:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "579:27:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46783,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "579:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46786,
+                "mutability": "mutable",
+                "name": "reserveLiquidationThreshold",
+                "nameLocation": "620:27:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "612:35:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46785,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "612:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46788,
+                "mutability": "mutable",
+                "name": "reserveLiquidationBonus",
+                "nameLocation": "661:23:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "653:31:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46787,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "653:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46790,
+                "mutability": "mutable",
+                "name": "reserveFactor",
+                "nameLocation": "698:13:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "690:21:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46789,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "690:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46792,
+                "mutability": "mutable",
+                "name": "usageAsCollateralEnabled",
+                "nameLocation": "722:24:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "717:29:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 46791,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "717:4:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46794,
+                "mutability": "mutable",
+                "name": "borrowingEnabled",
+                "nameLocation": "757:16:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "752:21:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 46793,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "752:4:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46796,
+                "mutability": "mutable",
+                "name": "stableBorrowRateEnabled",
+                "nameLocation": "784:23:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "779:28:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 46795,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "779:4:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46798,
+                "mutability": "mutable",
+                "name": "isActive",
+                "nameLocation": "818:8:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "813:13:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 46797,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "813:4:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46800,
+                "mutability": "mutable",
+                "name": "isFrozen",
+                "nameLocation": "837:8:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "832:13:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 46799,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "832:4:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46802,
+                "mutability": "mutable",
+                "name": "liquidityIndex",
+                "nameLocation": "876:14:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "868:22:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint128",
+                  "typeString": "uint128"
+                },
+                "typeName": {
+                  "id": 46801,
+                  "name": "uint128",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "868:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46804,
+                "mutability": "mutable",
+                "name": "variableBorrowIndex",
+                "nameLocation": "904:19:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "896:27:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint128",
+                  "typeString": "uint128"
+                },
+                "typeName": {
+                  "id": 46803,
+                  "name": "uint128",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "896:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46806,
+                "mutability": "mutable",
+                "name": "liquidityRate",
+                "nameLocation": "937:13:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "929:21:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint128",
+                  "typeString": "uint128"
+                },
+                "typeName": {
+                  "id": 46805,
+                  "name": "uint128",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "929:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46808,
+                "mutability": "mutable",
+                "name": "variableBorrowRate",
+                "nameLocation": "964:18:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "956:26:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint128",
+                  "typeString": "uint128"
+                },
+                "typeName": {
+                  "id": 46807,
+                  "name": "uint128",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "956:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46810,
+                "mutability": "mutable",
+                "name": "stableBorrowRate",
+                "nameLocation": "996:16:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "988:24:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint128",
+                  "typeString": "uint128"
+                },
+                "typeName": {
+                  "id": 46809,
+                  "name": "uint128",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "988:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46812,
+                "mutability": "mutable",
+                "name": "lastUpdateTimestamp",
+                "nameLocation": "1025:19:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1018:26:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint40",
+                  "typeString": "uint40"
+                },
+                "typeName": {
+                  "id": 46811,
+                  "name": "uint40",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1018:6:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint40",
+                    "typeString": "uint40"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46814,
+                "mutability": "mutable",
+                "name": "aTokenAddress",
+                "nameLocation": "1058:13:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1050:21:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 46813,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1050:7:25",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46816,
+                "mutability": "mutable",
+                "name": "stableDebtTokenAddress",
+                "nameLocation": "1085:22:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1077:30:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 46815,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1077:7:25",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46818,
+                "mutability": "mutable",
+                "name": "variableDebtTokenAddress",
+                "nameLocation": "1121:24:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1113:32:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 46817,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1113:7:25",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46820,
+                "mutability": "mutable",
+                "name": "interestRateStrategyAddress",
+                "nameLocation": "1159:27:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1151:35:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 46819,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1151:7:25",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46822,
+                "mutability": "mutable",
+                "name": "availableLiquidity",
+                "nameLocation": "1207:18:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1199:26:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46821,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1199:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46824,
+                "mutability": "mutable",
+                "name": "totalPrincipalStableDebt",
+                "nameLocation": "1239:24:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1231:32:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46823,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1231:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46826,
+                "mutability": "mutable",
+                "name": "averageStableRate",
+                "nameLocation": "1277:17:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1269:25:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46825,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1269:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46828,
+                "mutability": "mutable",
+                "name": "stableDebtLastUpdateTimestamp",
+                "nameLocation": "1308:29:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1300:37:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46827,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1300:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46830,
+                "mutability": "mutable",
+                "name": "totalScaledVariableDebt",
+                "nameLocation": "1351:23:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1343:31:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46829,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1343:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46832,
+                "mutability": "mutable",
+                "name": "priceInMarketReferenceCurrency",
+                "nameLocation": "1388:30:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1380:38:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46831,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1380:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46834,
+                "mutability": "mutable",
+                "name": "priceOracle",
+                "nameLocation": "1432:11:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1424:19:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 46833,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1424:7:25",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46836,
+                "mutability": "mutable",
+                "name": "variableRateSlope1",
+                "nameLocation": "1457:18:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1449:26:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46835,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1449:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46838,
+                "mutability": "mutable",
+                "name": "variableRateSlope2",
+                "nameLocation": "1489:18:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1481:26:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46837,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1481:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46840,
+                "mutability": "mutable",
+                "name": "stableRateSlope1",
+                "nameLocation": "1521:16:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1513:24:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46839,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1513:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46842,
+                "mutability": "mutable",
+                "name": "stableRateSlope2",
+                "nameLocation": "1551:16:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1543:24:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46841,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1543:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46844,
+                "mutability": "mutable",
+                "name": "baseStableBorrowRate",
+                "nameLocation": "1581:20:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1573:28:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46843,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1573:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46846,
+                "mutability": "mutable",
+                "name": "baseVariableBorrowRate",
+                "nameLocation": "1615:22:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1607:30:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46845,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1607:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46848,
+                "mutability": "mutable",
+                "name": "optimalUsageRatio",
+                "nameLocation": "1651:17:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1643:25:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46847,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1643:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46850,
+                "mutability": "mutable",
+                "name": "isPaused",
+                "nameLocation": "1694:8:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1689:13:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 46849,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1689:4:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46852,
+                "mutability": "mutable",
+                "name": "isSiloedBorrowing",
+                "nameLocation": "1713:17:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1708:22:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 46851,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1708:4:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46854,
+                "mutability": "mutable",
+                "name": "accruedToTreasury",
+                "nameLocation": "1744:17:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1736:25:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint128",
+                  "typeString": "uint128"
+                },
+                "typeName": {
+                  "id": 46853,
+                  "name": "uint128",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1736:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46856,
+                "mutability": "mutable",
+                "name": "unbacked",
+                "nameLocation": "1775:8:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1767:16:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint128",
+                  "typeString": "uint128"
+                },
+                "typeName": {
+                  "id": 46855,
+                  "name": "uint128",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1767:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46858,
+                "mutability": "mutable",
+                "name": "isolationModeTotalDebt",
+                "nameLocation": "1797:22:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1789:30:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint128",
+                  "typeString": "uint128"
+                },
+                "typeName": {
+                  "id": 46857,
+                  "name": "uint128",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1789:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46860,
+                "mutability": "mutable",
+                "name": "flashLoanEnabled",
+                "nameLocation": "1830:16:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1825:21:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 46859,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1825:4:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46862,
+                "mutability": "mutable",
+                "name": "debtCeiling",
+                "nameLocation": "1867:11:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1859:19:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46861,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1859:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46864,
+                "mutability": "mutable",
+                "name": "debtCeilingDecimals",
+                "nameLocation": "1892:19:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1884:27:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46863,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1884:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46866,
+                "mutability": "mutable",
+                "name": "eModeCategoryId",
+                "nameLocation": "1923:15:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1917:21:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint8",
+                  "typeString": "uint8"
+                },
+                "typeName": {
+                  "id": 46865,
+                  "name": "uint8",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1917:5:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46868,
+                "mutability": "mutable",
+                "name": "borrowCap",
+                "nameLocation": "1952:9:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1944:17:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46867,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1944:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46870,
+                "mutability": "mutable",
+                "name": "supplyCap",
+                "nameLocation": "1975:9:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "1967:17:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46869,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1967:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46872,
+                "mutability": "mutable",
+                "name": "eModeLtv",
+                "nameLocation": "2010:8:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "2003:15:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint16",
+                  "typeString": "uint16"
+                },
+                "typeName": {
+                  "id": 46871,
+                  "name": "uint16",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2003:6:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46874,
+                "mutability": "mutable",
+                "name": "eModeLiquidationThreshold",
+                "nameLocation": "2031:25:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "2024:32:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint16",
+                  "typeString": "uint16"
+                },
+                "typeName": {
+                  "id": 46873,
+                  "name": "uint16",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2024:6:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46876,
+                "mutability": "mutable",
+                "name": "eModeLiquidationBonus",
+                "nameLocation": "2069:21:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "2062:28:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint16",
+                  "typeString": "uint16"
+                },
+                "typeName": {
+                  "id": 46875,
+                  "name": "uint16",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2062:6:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46878,
+                "mutability": "mutable",
+                "name": "eModePriceSource",
+                "nameLocation": "2104:16:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "2096:24:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 46877,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2096:7:25",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46880,
+                "mutability": "mutable",
+                "name": "eModeLabel",
+                "nameLocation": "2133:10:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "2126:17:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 46879,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2126:6:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46882,
+                "mutability": "mutable",
+                "name": "borrowableInIsolation",
+                "nameLocation": "2154:21:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46883,
+                "src": "2149:26:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 46881,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2149:4:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "AggregatedReserveData",
+            "nameLocation": "464:21:25",
+            "scope": 46944,
+            "visibility": "public"
+          },
+          {
+            "id": 46898,
+            "nodeType": "StructDefinition",
+            "src": "2184:271:25",
+            "nodes": [],
+            "canonicalName": "IUiPoolDataProviderV3.UserReserveData",
+            "members": [
+              {
+                "constant": false,
+                "id": 46885,
+                "mutability": "mutable",
+                "name": "underlyingAsset",
+                "nameLocation": "2221:15:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46898,
+                "src": "2213:23:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 46884,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2213:7:25",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46887,
+                "mutability": "mutable",
+                "name": "scaledATokenBalance",
+                "nameLocation": "2250:19:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46898,
+                "src": "2242:27:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46886,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2242:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46889,
+                "mutability": "mutable",
+                "name": "usageAsCollateralEnabledOnUser",
+                "nameLocation": "2280:30:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46898,
+                "src": "2275:35:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 46888,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2275:4:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46891,
+                "mutability": "mutable",
+                "name": "stableBorrowRate",
+                "nameLocation": "2324:16:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46898,
+                "src": "2316:24:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46890,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2316:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46893,
+                "mutability": "mutable",
+                "name": "scaledVariableDebt",
+                "nameLocation": "2354:18:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46898,
+                "src": "2346:26:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46892,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2346:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46895,
+                "mutability": "mutable",
+                "name": "principalStableDebt",
+                "nameLocation": "2386:19:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46898,
+                "src": "2378:27:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46894,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2378:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46897,
+                "mutability": "mutable",
+                "name": "stableBorrowLastUpdateTimestamp",
+                "nameLocation": "2419:31:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46898,
+                "src": "2411:39:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46896,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2411:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "UserReserveData",
+            "nameLocation": "2191:15:25",
+            "scope": 46944,
+            "visibility": "public"
+          },
+          {
+            "id": 46907,
+            "nodeType": "StructDefinition",
+            "src": "2459:196:25",
+            "nodes": [],
+            "canonicalName": "IUiPoolDataProviderV3.BaseCurrencyInfo",
+            "members": [
+              {
+                "constant": false,
+                "id": 46900,
+                "mutability": "mutable",
+                "name": "marketReferenceCurrencyUnit",
+                "nameLocation": "2497:27:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46907,
+                "src": "2489:35:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 46899,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2489:7:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46902,
+                "mutability": "mutable",
+                "name": "marketReferenceCurrencyPriceInUsd",
+                "nameLocation": "2537:33:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46907,
+                "src": "2530:40:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_int256",
+                  "typeString": "int256"
+                },
+                "typeName": {
+                  "id": 46901,
+                  "name": "int256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2530:6:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46904,
+                "mutability": "mutable",
+                "name": "networkBaseTokenPriceInUsd",
+                "nameLocation": "2583:26:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46907,
+                "src": "2576:33:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_int256",
+                  "typeString": "int256"
+                },
+                "typeName": {
+                  "id": 46903,
+                  "name": "int256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2576:6:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46906,
+                "mutability": "mutable",
+                "name": "networkBaseTokenPriceDecimals",
+                "nameLocation": "2621:29:25",
+                "nodeType": "VariableDeclaration",
+                "scope": 46907,
+                "src": "2615:35:25",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint8",
+                  "typeString": "uint8"
+                },
+                "typeName": {
+                  "id": 46905,
+                  "name": "uint8",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2615:5:25",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "BaseCurrencyInfo",
+            "nameLocation": "2466:16:25",
+            "scope": 46944,
+            "visibility": "public"
+          },
+          {
+            "id": 46916,
+            "nodeType": "FunctionDefinition",
+            "src": "2659:107:25",
+            "nodes": [],
+            "functionSelector": "586c1442",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getReservesList",
+            "nameLocation": "2668:15:25",
+            "parameters": {
+              "id": 46911,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 46910,
+                  "mutability": "mutable",
+                  "name": "provider",
+                  "nameLocation": "2712:8:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46916,
+                  "src": "2689:31:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IPoolAddressesProvider_$46403",
+                    "typeString": "contract IPoolAddressesProvider"
+                  },
+                  "typeName": {
+                    "id": 46909,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 46908,
+                      "name": "IPoolAddressesProvider",
+                      "nameLocations": [
+                        "2689:22:25"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 46403,
+                      "src": "2689:22:25"
+                    },
+                    "referencedDeclaration": 46403,
+                    "src": "2689:22:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IPoolAddressesProvider_$46403",
+                      "typeString": "contract IPoolAddressesProvider"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2683:41:25"
+            },
+            "returnParameters": {
+              "id": 46915,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 46914,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46916,
+                  "src": "2748:16:25",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 46912,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "2748:7:25",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 46913,
+                    "nodeType": "ArrayTypeName",
+                    "src": "2748:9:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2747:18:25"
+            },
+            "scope": 46944,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 46929,
+            "nodeType": "FunctionDefinition",
+            "src": "2770:146:25",
+            "nodes": [],
+            "functionSelector": "ec489c21",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getReservesData",
+            "nameLocation": "2779:15:25",
+            "parameters": {
+              "id": 46920,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 46919,
+                  "mutability": "mutable",
+                  "name": "provider",
+                  "nameLocation": "2823:8:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46929,
+                  "src": "2800:31:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IPoolAddressesProvider_$46403",
+                    "typeString": "contract IPoolAddressesProvider"
+                  },
+                  "typeName": {
+                    "id": 46918,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 46917,
+                      "name": "IPoolAddressesProvider",
+                      "nameLocations": [
+                        "2800:22:25"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 46403,
+                      "src": "2800:22:25"
+                    },
+                    "referencedDeclaration": 46403,
+                    "src": "2800:22:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IPoolAddressesProvider_$46403",
+                      "typeString": "contract IPoolAddressesProvider"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2794:41:25"
+            },
+            "returnParameters": {
+              "id": 46928,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 46924,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46929,
+                  "src": "2859:30:25",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_AggregatedReserveData_$46883_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "struct IUiPoolDataProviderV3.AggregatedReserveData[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 46922,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode": {
+                        "id": 46921,
+                        "name": "AggregatedReserveData",
+                        "nameLocations": [
+                          "2859:21:25"
+                        ],
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 46883,
+                        "src": "2859:21:25"
+                      },
+                      "referencedDeclaration": 46883,
+                      "src": "2859:21:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_AggregatedReserveData_$46883_storage_ptr",
+                        "typeString": "struct IUiPoolDataProviderV3.AggregatedReserveData"
+                      }
+                    },
+                    "id": 46923,
+                    "nodeType": "ArrayTypeName",
+                    "src": "2859:23:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_AggregatedReserveData_$46883_storage_$dyn_storage_ptr",
+                      "typeString": "struct IUiPoolDataProviderV3.AggregatedReserveData[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 46927,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46929,
+                  "src": "2891:23:25",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_BaseCurrencyInfo_$46907_memory_ptr",
+                    "typeString": "struct IUiPoolDataProviderV3.BaseCurrencyInfo"
+                  },
+                  "typeName": {
+                    "id": 46926,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 46925,
+                      "name": "BaseCurrencyInfo",
+                      "nameLocations": [
+                        "2891:16:25"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 46907,
+                      "src": "2891:16:25"
+                    },
+                    "referencedDeclaration": 46907,
+                    "src": "2891:16:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_BaseCurrencyInfo_$46907_storage_ptr",
+                      "typeString": "struct IUiPoolDataProviderV3.BaseCurrencyInfo"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2858:57:25"
+            },
+            "scope": 46944,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 46943,
+            "nodeType": "FunctionDefinition",
+            "src": "2920:144:25",
+            "nodes": [],
+            "functionSelector": "51974cc0",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getUserReservesData",
+            "nameLocation": "2929:19:25",
+            "parameters": {
+              "id": 46935,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 46932,
+                  "mutability": "mutable",
+                  "name": "provider",
+                  "nameLocation": "2977:8:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46943,
+                  "src": "2954:31:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IPoolAddressesProvider_$46403",
+                    "typeString": "contract IPoolAddressesProvider"
+                  },
+                  "typeName": {
+                    "id": 46931,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 46930,
+                      "name": "IPoolAddressesProvider",
+                      "nameLocations": [
+                        "2954:22:25"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 46403,
+                      "src": "2954:22:25"
+                    },
+                    "referencedDeclaration": 46403,
+                    "src": "2954:22:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IPoolAddressesProvider_$46403",
+                      "typeString": "contract IPoolAddressesProvider"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 46934,
+                  "mutability": "mutable",
+                  "name": "user",
+                  "nameLocation": "2999:4:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46943,
+                  "src": "2991:12:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 46933,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2991:7:25",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2948:59:25"
+            },
+            "returnParameters": {
+              "id": 46942,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 46939,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46943,
+                  "src": "3031:24:25",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_UserReserveData_$46898_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "struct IUiPoolDataProviderV3.UserReserveData[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 46937,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode": {
+                        "id": 46936,
+                        "name": "UserReserveData",
+                        "nameLocations": [
+                          "3031:15:25"
+                        ],
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 46898,
+                        "src": "3031:15:25"
+                      },
+                      "referencedDeclaration": 46898,
+                      "src": "3031:15:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_UserReserveData_$46898_storage_ptr",
+                        "typeString": "struct IUiPoolDataProviderV3.UserReserveData"
+                      }
+                    },
+                    "id": 46938,
+                    "nodeType": "ArrayTypeName",
+                    "src": "3031:17:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_UserReserveData_$46898_storage_$dyn_storage_ptr",
+                      "typeString": "struct IUiPoolDataProviderV3.UserReserveData[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 46941,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46943,
+                  "src": "3057:5:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 46940,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3057:5:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3030:33:25"
+            },
+            "scope": 46944,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IUiPoolDataProviderV3",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          46944
+        ],
+        "name": "IUiPoolDataProviderV3",
+        "nameLocation": "176:21:25",
+        "scope": 46945,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "AGPL-3.0"
+  },
+  "id": 25
+}
